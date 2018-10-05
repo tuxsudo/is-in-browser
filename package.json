@@ -10,6 +10,10 @@
     "test": "babel-tape-runner test/*.js | tap-spec",
     "prepublish": "npm run build"
   },
+  "files": [
+    "dist",
+    "src"
+  ],
   "keywords": [],
   "license": "MIT",
   "dependencies": {},
