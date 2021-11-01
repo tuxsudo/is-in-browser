@@ -11,4 +11,8 @@ export const isBrowser =
   typeof document === "object" &&
   document.nodeType === 9;
 
+export const isDeno =
+  typeof window === "object" &&
+  typeof window.Deno === "object"
+
 export default isBrowser;

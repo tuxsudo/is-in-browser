@@ -1,4 +1,4 @@
-import isInBrowser, { isBrowser, isJsDom, isNode } from ".";
+import isInBrowser, { isBrowser, isDeno, isJsDom, isNode } from ".";
 
 test("isInBrowser", () => {
   // jest runs jsdom, so true
@@ -12,6 +12,9 @@ test("isInBrowser", () => {
 
   // jest runs on Node, so true
   expect(isNode).toBe(true);
+
+  // jest runs on Deno, so true
+  expect(isDeno).toBe(true);
 
   // jest runs JSDOm, so true
 });
