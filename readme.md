@@ -11,7 +11,7 @@ if (isBrowser) {
 More thoroughly:
 
 ```js
-import { isJsDom, isNode, isBrowser } from "is-in-browser";
+import { isJsDom, isNode, isBrowser, isDeno } from "is-in-browser";
 
 if (isBrowser) {
   // you're in the browser
@@ -24,6 +24,10 @@ if (isJsDom) {
 
 if (isNode) {
   // you're in the Node
+}
+
+if (isDeno) {
+  // you're in the Deno
 }
 ```
 
